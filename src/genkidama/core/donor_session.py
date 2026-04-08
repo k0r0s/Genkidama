@@ -7,7 +7,6 @@ from typing import Generic
 from collections.abc import MutableMapping
 
 import typing
-import requests
 
 SessionT = typing.TypeVar("SessionT", bound=GenkidamaSession)
 
