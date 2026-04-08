@@ -29,10 +29,11 @@ def connect_to_session(address: tuple[str,int] | str) -> RemoteGenkidamaSession:
 
     return donor_session.master_session
 
-def start_server(port: int | None = None):
-    port = DEFAULTS.SERVER_PORT if port is None else port
+def start_server(address: tuple[str,int] | str):
+    address = typing.cast(tuple[str, int], address) if isinstance(address, tuple) else (address, DEFAULTS.SERVER_PORT)
 
-    server = ForkingServer(TCPSocketServer(("localhost",port)))
+
+    server = ForkingServer(TCPSocketServer(address))
     tcp_transport = server.accept()
 
     endpoint = TerminalEndpoint(BinaryCodec(), tcp_transport)
