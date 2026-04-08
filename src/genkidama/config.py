@@ -6,7 +6,7 @@ import sys
 class Config: # TODO optimize config
 
 
-    SERVER_PORT = 9001
+    SERVER_PORT = 9000
 
     PAYLOAD_FRAME_LENGTH: int = 4
 
