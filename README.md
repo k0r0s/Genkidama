@@ -62,3 +62,5 @@ print(proc_output)
 which should just print `Hello World` on your Kaio, however observe that this data was produced in the Donor as a consequence of the input data that the Kaio forwarded to the Donor in the first place, which finally forwards the produced data back to the Kaio (which is the same as the input data in this echo example).
 
 ## Glossary
+* **Kaio:** Term to refer to the machine/system/software sending out requests to the Donors for execution and collecting the results of the executed processes.
+* **Donor:** Term to refer to the machines receiving requests from one or more Kaios and doing the actual work.
