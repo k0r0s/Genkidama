@@ -10,12 +10,12 @@ packages = ["src/genkidama"]
 
 [project]
 name = "genkidama"
-version = "0.0.3"
+version = "0.0.4"
 
 authors = [
 {name="Edu Vallejo Arginzoniz", email="txetxedeletxe@gmail.com" }]
 
-description = "Genkidama is a pure-python library that: 1. Enables developers to write a wide variety of distributed programs (to scale compute, to manage a large fleet of computers, ...) with very few extra lines of code; and 2. Allows mantainers to easily setup highly-heterogeneous computer clusters (comprised of any platform that can run python) in minutes."
+description = "Genkidama is a pure-python library that: Enables developers to write a wide variety of distributed programs, and allows mantainers to easily setup highly-heterogeneous computer clusters."
 keywords = ["distributed-computing", "hpc", "cluster-management", "rpc"]
 readme = "README.md"
 requires-python = ">=3.13"

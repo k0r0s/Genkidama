@@ -1,10 +1,17 @@
 # TODOs in the project
 
 ## Code
+- Add a Security Layer for connections: Authentication/Encription
+- Add additional features to manage processes: e.g. signaling
+- Add an additional layer of abstraction on top of sessions/processes to ease some use cases (writing to a file, sending pickled objects, executing commands etc.)
+- Add runtime utilities (genkidama runtime) to make it easier to write scripts
+- Add tests
+- Revise architecture and abstractions, rename interfaces with more intuitive names
 - Refactor code to make use of OOP better, Abstract classes, properties, visibility of fileds, etc...
 - Document code and interfaces
+- Write README, add a tutorial
 - Code validation logic
-- <think> about ID generation
-- Structure project into modules
-- Clean-up after forking
-- Revise architecture and abstractions
+- Add more loggin
+- Add grafana performance loggin (genkidama scouter)
+- Add other transport/codec implementations (WebSockets, UNIX pipes, dummy transport/socket)
+- Write a donor server that can run in a browser
